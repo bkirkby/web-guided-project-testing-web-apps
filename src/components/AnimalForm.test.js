@@ -14,7 +14,7 @@ test("submited form renders animal name", () => {
 
   const speciesInput = screen.getByLabelText(/species/i)
 
-  userEvent.type('Big Bear');
+  userEvent.type(speciesInput, 'Big Bear');
 
   expect(speciesInput).toHaveValue('Big Bear');
 })
