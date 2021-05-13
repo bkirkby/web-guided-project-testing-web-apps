@@ -11,6 +11,8 @@ import App from './App';
 //   })
 // })
 
+const lang = { species: 'Species', age: 'Age', notes: 'Notes' }
+
 test("App renders", () => {
-  render(<App />)
+  render(<App lang={lang} />)
 })
