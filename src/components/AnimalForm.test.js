@@ -23,5 +23,5 @@ test("submitted form renders animal name", () => {
 
   userEvent.click(submitButton);
 
-  screen.getByText(animal)
+  screen.getByText(animal + 'l')
 })
