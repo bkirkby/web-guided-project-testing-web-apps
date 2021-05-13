@@ -23,7 +23,7 @@ test("header is rendered properly", () => {
 
   // const h1 = screen.getByText('Add New Animal')
   // const h1 = screen.getByText('Add New Animal')
-  const h1 = screen.getByText(/^Add New Animal$/i)
+  const h1 = screen.getByText(/Add New Animal/i)
 
   expect(h1).toBeDefined();
 })
