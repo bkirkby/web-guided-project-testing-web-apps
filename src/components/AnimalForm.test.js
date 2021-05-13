@@ -27,4 +27,5 @@ test("submitted form renders animal name", () => {
   screen.getByText(animal)
   screen.getByText(/lion/i)
   screen.getByDisplayValue(animal)
+  expect(speciesInput.value).toBe(animal)
 })
