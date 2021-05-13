@@ -21,7 +21,7 @@ test("App renders", () => {
 test("header is rendered properly", () => {
   render(<App lang={lang} />)
 
-  const h1 = screen.getByText('Add New Animall')
+  const h1 = screen.getByText('Add New Animal')
 
   expect(h1).toBeDefined();
 })
