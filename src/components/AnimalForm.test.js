@@ -9,7 +9,7 @@ test("AnimalForm renders", () => {
   render(<AnimalForm lang={lang} />);
 })
 
-test("submited form renders animal name", () => {
+test("submitted form renders animal name", () => {
   render(<AnimalForm lang={lang} />)
 
   const speciesInput = screen.getByLabelText(/species/i)
@@ -17,4 +17,8 @@ test("submited form renders animal name", () => {
   userEvent.type(speciesInput, 'Big Bear');
 
   expect(speciesInput).toHaveValue('Big Bear');
+
+  const submitButton = screen.getByRole("button");
+
+  userEvent.click(submitButton);
 })
