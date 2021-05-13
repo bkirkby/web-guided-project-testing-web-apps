@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
 // Arrange, Act, Assert
@@ -16,4 +16,12 @@ const lang = { species: 'Species', age: 'Age', notes: 'Notes' }
 test("App renders", () => {
   // render(<App lang={lang} />)
   render(<App lang={lang} />)
+})
+
+test("header is rendered properly", () => {
+  render(<App lang={lang} />)
+
+  const h1 = screen.getByText('Add New Animal')
+
+  expect(h1).toBeDefined();
 })
