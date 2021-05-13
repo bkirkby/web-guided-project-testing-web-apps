@@ -49,7 +49,7 @@ const AnimalForm = ({ lang }) => {
           name="notes"
           onChange={event => handleChange(event)}
         />
-        <button>Submit!</button>
+        <button data-testid="submitButton">Submit!</button>
       </form>
       <h4>Current Animals</h4>
       {animals.map(animal => (
