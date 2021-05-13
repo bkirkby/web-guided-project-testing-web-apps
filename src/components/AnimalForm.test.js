@@ -18,7 +18,7 @@ test("submitted form renders animal name", () => {
 
   expect(speciesInput).toHaveValue('Big Bear');
 
-  const submitButton = screen.getByRole("butto");
+  const submitButton = screen.getByRole("button");
 
   userEvent.click(submitButton);
 })
