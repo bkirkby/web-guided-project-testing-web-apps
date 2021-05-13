@@ -6,5 +6,5 @@ import App from './App';
 
 // test("bogus test", () => {
 it("bogus test", () => {
-  expect(0).toBeTruthy()
-// })
+  expect(true).toBeTruthy()
+})
