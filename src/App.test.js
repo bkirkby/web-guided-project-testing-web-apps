@@ -15,5 +15,5 @@ const lang = { species: 'Species', age: 'Age', notes: 'Notes' }
 
 test("App renders", () => {
   // render(<App lang={lang} />)
-  render(<App />)
+  render(<App lang={lang} />)
 })
