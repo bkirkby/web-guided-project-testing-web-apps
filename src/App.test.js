@@ -5,8 +5,12 @@ import App from './App';
 // Arrange, Act, Assert
 
 // test("bogus checks if true is truthy", () => {
-describe("bogus", () => {
-  it("checks if true is truthy", () => {
-    expect(true).toBeTruthy()
-  })
+// describe("bogus", () => {
+//   it("checks if true is truthy", () => {
+//     expect(true).toBeTruthy()
+//   })
+// })
+
+test("App renders", () => {
+  render(<App />)
 })
