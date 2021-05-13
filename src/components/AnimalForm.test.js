@@ -6,5 +6,5 @@ import AnimalForm from './AnimalForm';
 import { lang } from '../App.test';
 
 test("AnimalForm renders", () => {
-  render(<AnimalForm />);
+  render(<AnimalForm lang={lang} />);
 })
