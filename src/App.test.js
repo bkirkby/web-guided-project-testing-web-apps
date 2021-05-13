@@ -5,5 +5,5 @@ import App from './App';
 // Arrange, Act, Assert
 
 test("bogus test", () => {
-  expect(true).toBeTruthy()
+  expect(false).toBeTruthy()
 })
