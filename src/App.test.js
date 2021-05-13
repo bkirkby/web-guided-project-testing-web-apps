@@ -11,7 +11,7 @@ import App from './App';
 //   })
 // })
 
-const lang = { species: 'Species', age: 'Age', notes: 'Notes' }
+export const lang = { species: 'Species', age: 'Age', notes: 'Notes' }
 
 test("App renders", () => {
   // render(<App lang={lang} />)
